@@ -46,4 +46,4 @@ class LoginView(GenericAPIView):
 
             return Response(data, status=status.HTTP_200_OK)
         
-        return Response({'detail': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+        return Response({'detail': 'Invalid credentials. Try again.'}, status=status.HTTP_401_UNAUTHORIZED)
